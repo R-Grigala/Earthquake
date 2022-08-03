@@ -19,7 +19,7 @@ class Link(models.Model):
     
     def save(self, *args, **kwargs):
         name, price = get_link_data(self.url)
-        if type(price) != None: 
+        if type(price) == float: 
             old_price = self.current_price
             if self.current_price:
                 if price != old_price:
