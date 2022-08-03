@@ -29,8 +29,13 @@ class Link(models.Model):
             else:
                 self.old_price = 0
                 self.price_difference = 0
+            
+        else:
+            self.old_price = 0
+            self.price_difference = None
 
-            self.name = name
-            self.current_price = price
-
+        self.name = name
+        self.current_price = price
+        
+                
         super().save(*args, **kwargs)
