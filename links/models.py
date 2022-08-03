@@ -38,4 +38,4 @@ class Link(models.Model):
         self.current_price = price
         
                 
-        super().save(*args, **kwargs)
+        super().save()
