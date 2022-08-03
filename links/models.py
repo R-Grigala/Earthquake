@@ -22,7 +22,7 @@ class Link(models.Model):
         old_price = self.current_price
         if self.current_price:
             if price != old_price:
-                diff = price - old_price
+                diff = float(price) - old_price
                 self.price_difference = round(diff, 2)
                 self.old_price = old_price
         else:
