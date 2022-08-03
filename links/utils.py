@@ -12,7 +12,8 @@ def get_link_data(url):
     response = requests.get(url, headers=headers)
     soup = BeautifulSoup(response.text, "lxml")
 
-    name = soup.select_one(selector="#title").getText()
+    title_name = soup.select_one(selector="#title")
+    name = title_name.getText() if title_name else "no Description"
     name = name.strip()
 
 
