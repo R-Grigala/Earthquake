@@ -21,6 +21,6 @@ def get_link_data(url):
     price = soup.select_one(selector=".a-offscreen")
     if price is not None:
         price = price.getText()
-        price = price[1:]
+        price = float(price[1:])
     
     return name, price
