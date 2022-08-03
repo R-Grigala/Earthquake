@@ -19,23 +19,21 @@ class Link(models.Model):
     
     def save(self, *args, **kwargs):
         name, price = get_link_data(self.url)
-        if type(price) == float: 
-            old_price = self.current_price
-            if self.current_price:
-                if price != old_price:
-                    diff = price - old_price
-                    self.price_difference = round(diff, 2)
-                    self.old_price = old_price
-            else:
-                self.old_price = 0
-                self.price_difference = 0
-            
+        old_price = self.current_price
+        if self.current_price:
+            if price != old_price:
+                diff = price - old_price
+                self.price_difference = round(diff, 2)
+                self.old_price = old_price
         else:
             self.old_price = 0
-            self.price_difference = None
+            self.price_difference = 0
+            
+        self.old_price = 0
+        self.price_difference = 0
 
         self.name = name
         self.current_price = price
         
                 
-        super().save()
+        super().save(*args, **kwargs)
