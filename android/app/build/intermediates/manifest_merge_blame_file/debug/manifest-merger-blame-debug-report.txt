@@ -20,328 +20,667 @@
 14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 14-->[:react-native-community_netinfo] /home/grigala/Code/Earthquakes/node_modules/@react-native-community/netinfo/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-79
 14-->[:react-native-community_netinfo] /home/grigala/Code/Earthquakes/node_modules/@react-native-community/netinfo/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:7:22-76
-15    <uses-permission android:name="android.permission.WAKE_LOCK" />
-15-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:25:5-68
-15-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:25:22-65
-16    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-16-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:27:5-81
-16-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:27:22-78
-17    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-17-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:28:5-77
-17-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:28:22-74
-18
-19    <uses-feature
-19-->[com.google.android.gms:play-services-maps:18.0.2] /home/grigala/.gradle/caches/transforms-3/4fe486e3c16899c67b1f49a3e3ae28f6/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:26:5-28:35
-20        android:glEsVersion="0x00020000"
-20-->[com.google.android.gms:play-services-maps:18.0.2] /home/grigala/.gradle/caches/transforms-3/4fe486e3c16899c67b1f49a3e3ae28f6/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:27:9-41
-21        android:required="true" />
-21-->[com.google.android.gms:play-services-maps:18.0.2] /home/grigala/.gradle/caches/transforms-3/4fe486e3c16899c67b1f49a3e3ae28f6/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:28:9-32
-22
-23    <queries>
-23-->[com.google.android.gms:play-services-maps:18.0.2] /home/grigala/.gradle/caches/transforms-3/4fe486e3c16899c67b1f49a3e3ae28f6/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:30:5-34:15
-24
-25        <!-- Needs to be explicitly declared on Android R+ -->
-26        <package android:name="com.google.android.apps.maps" />
-26-->[com.google.android.gms:play-services-maps:18.0.2] /home/grigala/.gradle/caches/transforms-3/4fe486e3c16899c67b1f49a3e3ae28f6/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:9-64
-26-->[com.google.android.gms:play-services-maps:18.0.2] /home/grigala/.gradle/caches/transforms-3/4fe486e3c16899c67b1f49a3e3ae28f6/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:18-61
-27    </queries>
+15
+16    <uses-feature
+16-->[com.google.android.gms:play-services-maps:18.0.2] /home/grigala/.gradle/caches/transforms-3/4fe486e3c16899c67b1f49a3e3ae28f6/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:26:5-28:35
+17        android:glEsVersion="0x00020000"
+17-->[com.google.android.gms:play-services-maps:18.0.2] /home/grigala/.gradle/caches/transforms-3/4fe486e3c16899c67b1f49a3e3ae28f6/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:27:9-41
+18        android:required="true" />
+18-->[com.google.android.gms:play-services-maps:18.0.2] /home/grigala/.gradle/caches/transforms-3/4fe486e3c16899c67b1f49a3e3ae28f6/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:28:9-32
+19
+20    <queries>
+20-->[com.google.android.gms:play-services-maps:18.0.2] /home/grigala/.gradle/caches/transforms-3/4fe486e3c16899c67b1f49a3e3ae28f6/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:30:5-34:15
+21
+22        <!-- Needs to be explicitly declared on Android R+ -->
+23        <package android:name="com.google.android.apps.maps" />
+23-->[com.google.android.gms:play-services-maps:18.0.2] /home/grigala/.gradle/caches/transforms-3/4fe486e3c16899c67b1f49a3e3ae28f6/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:9-64
+23-->[com.google.android.gms:play-services-maps:18.0.2] /home/grigala/.gradle/caches/transforms-3/4fe486e3c16899c67b1f49a3e3ae28f6/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:18-61
+24    </queries> <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
+25    <permission
+25-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:10:5-12:47
+26        android:name="com.earthquakes.permission.C2D_MESSAGE"
+26-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:11:9-63
+27        android:protectionLevel="signature" />
+27-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:12:9-44
 28
-29    <application
-29-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:5:5-24:19
-30        android:name="com.earthquakes.MainApplication"
-30-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:6:7-38
-31        android:allowBackup="false"
-31-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:10:7-34
-32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-32-->[androidx.core:core:1.7.0] /home/grigala/.gradle/caches/transforms-3/75e4635b66fa4e4e84e71b52579837ce/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
-33        android:debuggable="true"
-34        android:icon="@mipmap/ic_launcher"
-34-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:8:7-41
-35        android:label="@string/app_name"
-35-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:7:7-39
-36        android:roundIcon="@mipmap/ic_launcher_round"
-36-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:9:7-52
-37        android:theme="@style/AppTheme"
-37-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:11:7-38
-38        android:usesCleartextTraffic="true" >
-38-->/home/grigala/Code/Earthquakes/android/app/src/debug/AndroidManifest.xml:8:9-44
-39        <activity
-39-->/home/grigala/Code/Earthquakes/android/app/src/debug/AndroidManifest.xml:11:9-111
-40            android:name="com.facebook.react.devsupport.DevSettingsActivity"
-40-->/home/grigala/Code/Earthquakes/android/app/src/debug/AndroidManifest.xml:11:19-83
-41            android:exported="false" />
-41-->/home/grigala/Code/Earthquakes/android/app/src/debug/AndroidManifest.xml:11:84-108
-42        <activity
-42-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:12:7-23:18
-43            android:name="com.earthquakes.MainActivity"
-43-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:13:9-37
-44            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
-44-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:15:9-118
-45            android:exported="true"
-45-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:18:9-32
-46            android:label="@string/app_name"
-46-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:14:9-41
-47            android:launchMode="singleTask"
-47-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:16:9-40
-48            android:windowSoftInputMode="adjustResize" >
-48-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:17:9-51
-49            <intent-filter>
-49-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:19:9-22:25
-50                <action android:name="android.intent.action.MAIN" />
-50-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:20:13-65
-50-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:20:21-62
-51
-52                <category android:name="android.intent.category.LAUNCHER" />
-52-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:21:13-73
-52-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:21:23-70
-53            </intent-filter>
-54        </activity>
-55
-56        <meta-data
-56-->[com.facebook.soloader:soloader:0.10.5] /home/grigala/.gradle/caches/transforms-3/ec3312a013bd7d8a70466a1977a1dba4/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:12:9-14:37
-57            android:name="com.facebook.soloader.enabled"
-57-->[com.facebook.soloader:soloader:0.10.5] /home/grigala/.gradle/caches/transforms-3/ec3312a013bd7d8a70466a1977a1dba4/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:13:13-57
-58            android:value="false" />
-58-->[com.facebook.soloader:soloader:0.10.5] /home/grigala/.gradle/caches/transforms-3/ec3312a013bd7d8a70466a1977a1dba4/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:14:13-34
-59
-60        <provider
-60-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:31:9-39:20
-61            android:name="androidx.startup.InitializationProvider"
-61-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:32:13-67
-62            android:authorities="com.earthquakes.androidx-startup"
-62-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:33:13-68
-63            android:exported="false" >
-63-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:34:13-37
-64            <meta-data
-64-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:36:13-38:52
-65                android:name="androidx.work.WorkManagerInitializer"
-65-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:37:17-68
-66                android:value="androidx.startup" />
-66-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:38:17-49
-67            <meta-data
-67-->[androidx.emoji2:emoji2:1.0.0] /home/grigala/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
-68                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-68-->[androidx.emoji2:emoji2:1.0.0] /home/grigala/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
-69                android:value="androidx.startup" />
-69-->[androidx.emoji2:emoji2:1.0.0] /home/grigala/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
-70            <meta-data
-70-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/grigala/.gradle/caches/transforms-3/d5d05479173d466a6bd0989b3b3e5ef4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
-71                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-71-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/grigala/.gradle/caches/transforms-3/d5d05479173d466a6bd0989b3b3e5ef4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
-72                android:value="androidx.startup" />
-72-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/grigala/.gradle/caches/transforms-3/d5d05479173d466a6bd0989b3b3e5ef4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
-73        </provider>
-74
-75        <service
-75-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:41:9-46:35
-76            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
-76-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:42:13-88
-77            android:directBootAware="false"
-77-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:43:13-44
-78            android:enabled="@bool/enable_system_alarm_service_default"
-78-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:44:13-72
+29    <uses-permission android:name="com.earthquakes.permission.C2D_MESSAGE" /> <!-- Required runtime permission to display notifications on Android 13 -->
+29-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:14:5-79
+29-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:14:22-76
+30    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- Required, makes sure notifications are delivered on time. -->
+30-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:17:5-77
+30-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:17:22-74
+31    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- c2dm RECEIVE are basic requirements for push messages through Google's FCM -->
+31-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:18:5-68
+31-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:18:22-65
+32    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+32-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:19:5-82
+32-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:19:22-79
+33    <!--
+34 Required so the device vibrates on receiving a push notification.
+35         Vibration settings of the device still apply.
+36    -->
+37    <uses-permission android:name="android.permission.VIBRATE" />
+37-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:24:5-66
+37-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:24:22-63
+38    <!--
+39 Use to restore notifications the user hasn't interacted with.
+40     They could be missed notifications if the user reboots their device if this isn't in place.
+41    -->
+42    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- START: ShortcutBadger -->
+42-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:29:5-81
+42-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:29:22-78
+43    <!-- Samsung -->
+44    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+44-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:31:5-86
+44-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:31:22-83
+45    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- HTC -->
+45-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:32:5-87
+45-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:32:22-84
+46    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+46-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:33:5-81
+46-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:33:22-78
+47    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- Sony -->
+47-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:34:5-83
+47-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:34:22-80
+48    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+48-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:35:5-88
+48-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:35:22-85
+49    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- Apex -->
+49-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:36:5-92
+49-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:36:22-89
+50    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- Solid -->
+50-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:37:5-84
+50-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:37:22-81
+51    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- Huawei -->
+51-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:38:5-83
+51-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:38:22-80
+52    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+52-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:39:5-91
+52-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:39:22-88
+53    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+53-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:40:5-92
+53-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:40:22-89
+54    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- ZUK -->
+54-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:41:5-93
+54-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:41:22-90
+55    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- OPPO -->
+55-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:42:5-73
+55-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:42:22-70
+56    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+56-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:43:5-82
+56-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:43:22-79
+57    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- EvMe -->
+57-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:44:5-83
+57-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:44:22-80
+58    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+58-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:45:5-88
+58-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:45:22-85
+59    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+59-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:46:5-89
+59-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:46:22-86
+60    <!--
+61         At a minimum the location module requires course permission, the app has the option
+62         to also include ACCESS_FINE_LOCATION and/or ACCESS_BACKGROUND_LOCATION
+63    -->
+64    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+64-->[com.onesignal:location:5.0.0] /home/grigala/.gradle/caches/transforms-3/b08957d0e25fd4a782f8599353c1f83c/transformed/jetified-location-5.0.0/AndroidManifest.xml:13:5-81
+64-->[com.onesignal:location:5.0.0] /home/grigala/.gradle/caches/transforms-3/b08957d0e25fd4a782f8599353c1f83c/transformed/jetified-location-5.0.0/AndroidManifest.xml:13:22-78
+65    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+65-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:28:5-77
+65-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:28:22-74
+66
+67    <application
+67-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:5:5-27:19
+68        android:name="com.earthquakes.MainApplication"
+68-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:6:7-38
+69        android:allowBackup="false"
+69-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:10:7-34
+70        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+70-->[androidx.core:core:1.7.0] /home/grigala/.gradle/caches/transforms-3/75e4635b66fa4e4e84e71b52579837ce/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+71        android:debuggable="true"
+72        android:icon="@mipmap/ic_launcher"
+72-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:8:7-41
+73        android:label="@string/app_name"
+73-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:7:7-39
+74        android:roundIcon="@mipmap/ic_launcher_round"
+74-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:9:7-52
+75        android:theme="@style/AppTheme"
+75-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:11:7-38
+76        android:usesCleartextTraffic="true" >
+76-->/home/grigala/Code/Earthquakes/android/app/src/debug/AndroidManifest.xml:8:9-44
+77        <activity
+77-->/home/grigala/Code/Earthquakes/android/app/src/debug/AndroidManifest.xml:11:9-111
+78            android:name="com.facebook.react.devsupport.DevSettingsActivity"
+78-->/home/grigala/Code/Earthquakes/android/app/src/debug/AndroidManifest.xml:11:19-83
 79            android:exported="false" />
-79-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:45:13-37
-80        <service
-80-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:47:9-53:35
-81            android:name="androidx.work.impl.background.systemjob.SystemJobService"
-81-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:48:13-84
-82            android:directBootAware="false"
-82-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:49:13-44
-83            android:enabled="@bool/enable_system_job_service_default"
-83-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:50:13-70
-84            android:exported="true"
-84-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:51:13-36
-85            android:permission="android.permission.BIND_JOB_SERVICE" />
-85-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:52:13-69
-86        <service
-86-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:54:9-59:35
-87            android:name="androidx.work.impl.foreground.SystemForegroundService"
-87-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:55:13-81
-88            android:directBootAware="false"
-88-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:56:13-44
-89            android:enabled="@bool/enable_system_foreground_service_default"
-89-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:57:13-77
-90            android:exported="false" />
-90-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:58:13-37
-91
-92        <receiver
-92-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:61:9-66:35
-93            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
-93-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:62:13-88
-94            android:directBootAware="false"
-94-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:63:13-44
-95            android:enabled="true"
-95-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:64:13-35
-96            android:exported="false" />
-96-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:65:13-37
-97        <receiver
-97-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:67:9-77:20
-98            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
-98-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:68:13-106
-99            android:directBootAware="false"
-99-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:69:13-44
-100            android:enabled="false"
-100-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:70:13-36
-101            android:exported="false" >
-101-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:71:13-37
-102            <intent-filter>
-102-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:73:13-76:29
-103                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
-103-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:17-87
-103-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:25-84
-104                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
-104-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:17-90
-104-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:25-87
-105            </intent-filter>
-106        </receiver>
-107        <receiver
-107-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:78:9-88:20
-108            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
-108-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:79:13-104
-109            android:directBootAware="false"
-109-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:80:13-44
-110            android:enabled="false"
-110-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:81:13-36
-111            android:exported="false" >
-111-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:82:13-37
-112            <intent-filter>
-112-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:84:13-87:29
-113                <action android:name="android.intent.action.BATTERY_OKAY" />
-113-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:17-77
-113-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:25-74
-114                <action android:name="android.intent.action.BATTERY_LOW" />
-114-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:17-76
-114-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:25-73
-115            </intent-filter>
-116        </receiver>
-117        <receiver
-117-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:89:9-99:20
-118            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
-118-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:90:13-104
-119            android:directBootAware="false"
-119-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:91:13-44
-120            android:enabled="false"
-120-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:92:13-36
+79-->/home/grigala/Code/Earthquakes/android/app/src/debug/AndroidManifest.xml:11:84-108
+80        <activity
+80-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:12:7-23:18
+81            android:name="com.earthquakes.MainActivity"
+81-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:13:9-37
+82            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+82-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:15:9-118
+83            android:exported="true"
+83-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:18:9-32
+84            android:label="@string/app_name"
+84-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:14:9-41
+85            android:launchMode="singleTask"
+85-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:16:9-40
+86            android:windowSoftInputMode="adjustResize" >
+86-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:17:9-51
+87            <intent-filter>
+87-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:19:9-22:25
+88                <action android:name="android.intent.action.MAIN" />
+88-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:20:13-65
+88-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:20:21-62
+89
+90                <category android:name="android.intent.category.LAUNCHER" />
+90-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:21:13-73
+90-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:21:23-70
+91            </intent-filter>
+92        </activity>
+93
+94        <meta-data
+94-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:24:7-26:56
+95            android:name="com.google.android.geo.API_KEY"
+95-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:25:9-54
+96            android:value="Your Google maps API Key Here" /> <!-- Needs to be explicitly declared on P+ -->
+96-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:26:9-54
+97        <uses-library
+97-->[com.google.android.gms:play-services-maps:18.0.2] /home/grigala/.gradle/caches/transforms-3/4fe486e3c16899c67b1f49a3e3ae28f6/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:39:9-41:40
+98            android:name="org.apache.http.legacy"
+98-->[com.google.android.gms:play-services-maps:18.0.2] /home/grigala/.gradle/caches/transforms-3/4fe486e3c16899c67b1f49a3e3ae28f6/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:40:13-50
+99            android:required="false" />
+99-->[com.google.android.gms:play-services-maps:18.0.2] /home/grigala/.gradle/caches/transforms-3/4fe486e3c16899c67b1f49a3e3ae28f6/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:41:13-37
+100
+101        <activity
+101-->[com.google.android.gms:play-services-base:18.0.1] /home/grigala/.gradle/caches/transforms-3/5c5981df95557675d2e59dd19bcd65bb/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+102            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+102-->[com.google.android.gms:play-services-base:18.0.1] /home/grigala/.gradle/caches/transforms-3/5c5981df95557675d2e59dd19bcd65bb/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+103            android:exported="false"
+103-->[com.google.android.gms:play-services-base:18.0.1] /home/grigala/.gradle/caches/transforms-3/5c5981df95557675d2e59dd19bcd65bb/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+104            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+104-->[com.google.android.gms:play-services-base:18.0.1] /home/grigala/.gradle/caches/transforms-3/5c5981df95557675d2e59dd19bcd65bb/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+105
+106        <receiver
+106-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:49:9-60:20
+107            android:name="com.onesignal.notifications.receivers.FCMBroadcastReceiver"
+107-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:50:13-86
+108            android:exported="true"
+108-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:51:13-36
+109            android:permission="com.google.android.c2dm.permission.SEND" >
+109-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:52:13-73
+110
+111            <!-- High priority so OneSignal payloads can be filtered from other FCM receivers -->
+112            <intent-filter android:priority="999" >
+112-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:55:13-59:29
+112-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:55:28-50
+113                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+113-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:56:17-81
+113-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:56:25-78
+114
+115                <category android:name="com.earthquakes" />
+115-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:58:17-61
+115-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:58:27-58
+116            </intent-filter>
+117        </receiver>
+118
+119        <service
+119-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:62:9-68:19
+120            android:name="com.onesignal.notifications.services.HmsMessageServiceOneSignal"
+120-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:63:13-91
 121            android:exported="false" >
-121-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:93:13-37
+121-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:64:13-37
 122            <intent-filter>
-122-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:95:13-98:29
-123                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
-123-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:17-83
-123-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:25-80
-124                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
-124-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:17-82
-124-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:25-79
-125            </intent-filter>
-126        </receiver>
-127        <receiver
-127-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:100:9-109:20
-128            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
-128-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:101:13-103
-129            android:directBootAware="false"
-129-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:102:13-44
-130            android:enabled="false"
-130-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:103:13-36
-131            android:exported="false" >
-131-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:104:13-37
+122-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:65:13-67:29
+123                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+123-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:66:17-81
+123-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:66:25-78
+124            </intent-filter>
+125        </service>
+126
+127        <activity
+127-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:70:9-78:20
+128            android:name="com.onesignal.notifications.activities.NotificationOpenedActivityHMS"
+128-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:71:13-96
+129            android:exported="true"
+129-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:72:13-36
+130            android:noHistory="true"
+130-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:73:13-37
+131            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+131-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:74:13-72
 132            <intent-filter>
-132-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:106:13-108:29
-133                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-133-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:17-79
-133-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:25-76
+132-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:75:13-77:29
+133                <action android:name="android.intent.action.VIEW" />
+133-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:76:17-69
+133-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:76:25-66
 134            </intent-filter>
-135        </receiver>
-136        <receiver
-136-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:110:9-121:20
-137            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
-137-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:111:13-88
-138            android:directBootAware="false"
-138-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:112:13-44
-139            android:enabled="false"
-139-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:113:13-36
-140            android:exported="false" >
-140-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:114:13-37
-141            <intent-filter>
-141-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:116:13-120:29
-142                <action android:name="android.intent.action.BOOT_COMPLETED" />
-142-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:17-79
-142-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:25-76
-143                <action android:name="android.intent.action.TIME_SET" />
-143-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:17-73
-143-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:25-70
-144                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
-144-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:17-81
-144-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:25-78
-145            </intent-filter>
-146        </receiver>
-147        <receiver
-147-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:122:9-131:20
-148            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
-148-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:123:13-99
-149            android:directBootAware="false"
-149-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:124:13-44
-150            android:enabled="@bool/enable_system_alarm_service_default"
-150-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:125:13-72
-151            android:exported="false" >
-151-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:126:13-37
-152            <intent-filter>
-152-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:128:13-130:29
-153                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
-153-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:17-98
-153-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:25-95
-154            </intent-filter>
-155        </receiver>
-156        <receiver
-156-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:132:9-142:20
-157            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
-157-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:133:13-78
-158            android:directBootAware="false"
-158-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:134:13-44
-159            android:enabled="true"
-159-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:135:13-35
-160            android:exported="true"
-160-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:136:13-36
-161            android:permission="android.permission.DUMP" >
-161-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:137:13-57
-162            <intent-filter>
-162-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:139:13-141:29
-163                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
-163-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:17-88
-163-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:25-85
-164            </intent-filter>
-165        </receiver>
-166
-167        <service
-167-->[androidx.room:room-runtime:2.2.5] /home/grigala/.gradle/caches/transforms-3/32f4dc14231a603560d048af81f18073/transformed/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
-168            android:name="androidx.room.MultiInstanceInvalidationService"
-168-->[androidx.room:room-runtime:2.2.5] /home/grigala/.gradle/caches/transforms-3/32f4dc14231a603560d048af81f18073/transformed/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
-169            android:directBootAware="true"
-169-->[androidx.room:room-runtime:2.2.5] /home/grigala/.gradle/caches/transforms-3/32f4dc14231a603560d048af81f18073/transformed/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
-170            android:exported="false" /> <!-- Needs to be explicitly declared on P+ -->
-170-->[androidx.room:room-runtime:2.2.5] /home/grigala/.gradle/caches/transforms-3/32f4dc14231a603560d048af81f18073/transformed/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
-171        <uses-library
-171-->[com.google.android.gms:play-services-maps:18.0.2] /home/grigala/.gradle/caches/transforms-3/4fe486e3c16899c67b1f49a3e3ae28f6/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:39:9-41:40
-172            android:name="org.apache.http.legacy"
-172-->[com.google.android.gms:play-services-maps:18.0.2] /home/grigala/.gradle/caches/transforms-3/4fe486e3c16899c67b1f49a3e3ae28f6/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:40:13-50
-173            android:required="false" />
-173-->[com.google.android.gms:play-services-maps:18.0.2] /home/grigala/.gradle/caches/transforms-3/4fe486e3c16899c67b1f49a3e3ae28f6/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:41:13-37
-174
-175        <activity
-175-->[com.google.android.gms:play-services-base:18.1.0] /home/grigala/.gradle/caches/transforms-3/7bc2107a0f24dde54b783ba4b64ec0fd/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
-176            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-176-->[com.google.android.gms:play-services-base:18.1.0] /home/grigala/.gradle/caches/transforms-3/7bc2107a0f24dde54b783ba4b64ec0fd/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:19-85
-177            android:exported="false"
-177-->[com.google.android.gms:play-services-base:18.1.0] /home/grigala/.gradle/caches/transforms-3/7bc2107a0f24dde54b783ba4b64ec0fd/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:22:19-43
-178            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-178-->[com.google.android.gms:play-services-base:18.1.0] /home/grigala/.gradle/caches/transforms-3/7bc2107a0f24dde54b783ba4b64ec0fd/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:21:19-78
-179
-180        <meta-data
-180-->[com.google.android.gms:play-services-basement:18.1.0] /home/grigala/.gradle/caches/transforms-3/bf9b6fb405d2f7fd8250171739588e78/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
-181            android:name="com.google.android.gms.version"
-181-->[com.google.android.gms:play-services-basement:18.1.0] /home/grigala/.gradle/caches/transforms-3/bf9b6fb405d2f7fd8250171739588e78/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
-182            android:value="@integer/google_play_services_version" />
-182-->[com.google.android.gms:play-services-basement:18.1.0] /home/grigala/.gradle/caches/transforms-3/bf9b6fb405d2f7fd8250171739588e78/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
-183    </application>
-184
-185</manifest>
+135        </activity>
+136
+137        <receiver
+137-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:80:9-82:39
+138            android:name="com.onesignal.notifications.receivers.NotificationDismissReceiver"
+138-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:81:13-93
+139            android:exported="true" />
+139-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:82:13-36
+140        <receiver
+140-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:83:9-90:20
+141            android:name="com.onesignal.notifications.receivers.BootUpReceiver"
+141-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:84:13-80
+142            android:exported="true" >
+142-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:85:13-36
+143            <intent-filter>
+143-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:86:13-89:29
+144                <action android:name="android.intent.action.BOOT_COMPLETED" />
+144-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:87:17-79
+144-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:87:25-76
+145                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+145-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:88:17-82
+145-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:88:25-79
+146            </intent-filter>
+147        </receiver>
+148        <receiver
+148-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:91:9-97:20
+149            android:name="com.onesignal.notifications.receivers.UpgradeReceiver"
+149-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:92:13-81
+150            android:exported="true" >
+150-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:93:13-36
+151            <intent-filter>
+151-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:94:13-96:29
+152                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+152-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:95:17-84
+152-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:95:25-81
+153            </intent-filter>
+154        </receiver>
+155
+156        <activity
+156-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:99:9-105:75
+157            android:name="com.onesignal.notifications.activities.NotificationOpenedActivity"
+157-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:100:13-93
+158            android:excludeFromRecents="true"
+158-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:101:13-46
+159            android:exported="true"
+159-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:102:13-36
+160            android:noHistory="true"
+160-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:103:13-37
+161            android:taskAffinity=""
+161-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:104:13-36
+162            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+162-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:105:13-72
+163        <activity
+163-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:106:9-111:75
+164            android:name="com.onesignal.notifications.activities.NotificationOpenedActivityAndroid22AndOlder"
+164-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:107:13-110
+165            android:excludeFromRecents="true"
+165-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:108:13-46
+166            android:exported="true"
+166-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:109:13-36
+167            android:noHistory="true"
+167-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:110:13-37
+168            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+168-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:111:13-72
+169
+170        <service
+170-->[com.onesignal:core:5.0.0] /home/grigala/.gradle/caches/transforms-3/e9ed2a2804d36bc9f37d634f3b8728b5/transformed/jetified-core-5.0.0/AndroidManifest.xml:13:9-16:43
+171            android:name="com.onesignal.core.services.SyncService"
+171-->[com.onesignal:core:5.0.0] /home/grigala/.gradle/caches/transforms-3/e9ed2a2804d36bc9f37d634f3b8728b5/transformed/jetified-core-5.0.0/AndroidManifest.xml:14:13-67
+172            android:exported="false"
+172-->[com.onesignal:core:5.0.0] /home/grigala/.gradle/caches/transforms-3/e9ed2a2804d36bc9f37d634f3b8728b5/transformed/jetified-core-5.0.0/AndroidManifest.xml:15:13-37
+173            android:stopWithTask="true" />
+173-->[com.onesignal:core:5.0.0] /home/grigala/.gradle/caches/transforms-3/e9ed2a2804d36bc9f37d634f3b8728b5/transformed/jetified-core-5.0.0/AndroidManifest.xml:16:13-40
+174        <service
+174-->[com.onesignal:core:5.0.0] /home/grigala/.gradle/caches/transforms-3/e9ed2a2804d36bc9f37d634f3b8728b5/transformed/jetified-core-5.0.0/AndroidManifest.xml:17:9-20:72
+175            android:name="com.onesignal.core.services.SyncJobService"
+175-->[com.onesignal:core:5.0.0] /home/grigala/.gradle/caches/transforms-3/e9ed2a2804d36bc9f37d634f3b8728b5/transformed/jetified-core-5.0.0/AndroidManifest.xml:18:13-70
+176            android:exported="false"
+176-->[com.onesignal:core:5.0.0] /home/grigala/.gradle/caches/transforms-3/e9ed2a2804d36bc9f37d634f3b8728b5/transformed/jetified-core-5.0.0/AndroidManifest.xml:19:13-37
+177            android:permission="android.permission.BIND_JOB_SERVICE" />
+177-->[com.onesignal:core:5.0.0] /home/grigala/.gradle/caches/transforms-3/e9ed2a2804d36bc9f37d634f3b8728b5/transformed/jetified-core-5.0.0/AndroidManifest.xml:20:13-69
+178
+179        <activity
+179-->[com.onesignal:core:5.0.0] /home/grigala/.gradle/caches/transforms-3/e9ed2a2804d36bc9f37d634f3b8728b5/transformed/jetified-core-5.0.0/AndroidManifest.xml:22:9-25:75
+180            android:name="com.onesignal.core.activities.PermissionsActivity"
+180-->[com.onesignal:core:5.0.0] /home/grigala/.gradle/caches/transforms-3/e9ed2a2804d36bc9f37d634f3b8728b5/transformed/jetified-core-5.0.0/AndroidManifest.xml:23:13-77
+181            android:exported="false"
+181-->[com.onesignal:core:5.0.0] /home/grigala/.gradle/caches/transforms-3/e9ed2a2804d36bc9f37d634f3b8728b5/transformed/jetified-core-5.0.0/AndroidManifest.xml:24:13-37
+182            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+182-->[com.onesignal:core:5.0.0] /home/grigala/.gradle/caches/transforms-3/e9ed2a2804d36bc9f37d634f3b8728b5/transformed/jetified-core-5.0.0/AndroidManifest.xml:25:13-72
+183
+184        <meta-data
+184-->[com.facebook.soloader:soloader:0.10.5] /home/grigala/.gradle/caches/transforms-3/ec3312a013bd7d8a70466a1977a1dba4/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:12:9-14:37
+185            android:name="com.facebook.soloader.enabled"
+185-->[com.facebook.soloader:soloader:0.10.5] /home/grigala/.gradle/caches/transforms-3/ec3312a013bd7d8a70466a1977a1dba4/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:13:13-57
+186            android:value="false" />
+186-->[com.facebook.soloader:soloader:0.10.5] /home/grigala/.gradle/caches/transforms-3/ec3312a013bd7d8a70466a1977a1dba4/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:14:13-34
+187
+188        <provider
+188-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:31:9-39:20
+189            android:name="androidx.startup.InitializationProvider"
+189-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:32:13-67
+190            android:authorities="com.earthquakes.androidx-startup"
+190-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:33:13-68
+191            android:exported="false" >
+191-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:34:13-37
+192            <meta-data
+192-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:36:13-38:52
+193                android:name="androidx.work.WorkManagerInitializer"
+193-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:37:17-68
+194                android:value="androidx.startup" />
+194-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:38:17-49
+195            <meta-data
+195-->[androidx.emoji2:emoji2:1.0.0] /home/grigala/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+196                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+196-->[androidx.emoji2:emoji2:1.0.0] /home/grigala/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+197                android:value="androidx.startup" />
+197-->[androidx.emoji2:emoji2:1.0.0] /home/grigala/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+198            <meta-data
+198-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/grigala/.gradle/caches/transforms-3/d5d05479173d466a6bd0989b3b3e5ef4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+199                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+199-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/grigala/.gradle/caches/transforms-3/d5d05479173d466a6bd0989b3b3e5ef4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+200                android:value="androidx.startup" />
+200-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/grigala/.gradle/caches/transforms-3/d5d05479173d466a6bd0989b3b3e5ef4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+201        </provider>
+202
+203        <service
+203-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:41:9-46:35
+204            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+204-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:42:13-88
+205            android:directBootAware="false"
+205-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:43:13-44
+206            android:enabled="@bool/enable_system_alarm_service_default"
+206-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:44:13-72
+207            android:exported="false" />
+207-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:45:13-37
+208        <service
+208-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:47:9-53:35
+209            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+209-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:48:13-84
+210            android:directBootAware="false"
+210-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:49:13-44
+211            android:enabled="@bool/enable_system_job_service_default"
+211-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:50:13-70
+212            android:exported="true"
+212-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:51:13-36
+213            android:permission="android.permission.BIND_JOB_SERVICE" />
+213-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:52:13-69
+214        <service
+214-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:54:9-59:35
+215            android:name="androidx.work.impl.foreground.SystemForegroundService"
+215-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:55:13-81
+216            android:directBootAware="false"
+216-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:56:13-44
+217            android:enabled="@bool/enable_system_foreground_service_default"
+217-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:57:13-77
+218            android:exported="false" />
+218-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:58:13-37
+219
+220        <receiver
+220-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:61:9-66:35
+221            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+221-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:62:13-88
+222            android:directBootAware="false"
+222-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:63:13-44
+223            android:enabled="true"
+223-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:64:13-35
+224            android:exported="false" />
+224-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:65:13-37
+225        <receiver
+225-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:67:9-77:20
+226            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+226-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:68:13-106
+227            android:directBootAware="false"
+227-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:69:13-44
+228            android:enabled="false"
+228-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:70:13-36
+229            android:exported="false" >
+229-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:71:13-37
+230            <intent-filter>
+230-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:73:13-76:29
+231                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+231-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:17-87
+231-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:25-84
+232                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+232-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:17-90
+232-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:25-87
+233            </intent-filter>
+234        </receiver>
+235        <receiver
+235-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:78:9-88:20
+236            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+236-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:79:13-104
+237            android:directBootAware="false"
+237-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:80:13-44
+238            android:enabled="false"
+238-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:81:13-36
+239            android:exported="false" >
+239-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:82:13-37
+240            <intent-filter>
+240-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:84:13-87:29
+241                <action android:name="android.intent.action.BATTERY_OKAY" />
+241-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:17-77
+241-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:25-74
+242                <action android:name="android.intent.action.BATTERY_LOW" />
+242-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:17-76
+242-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:25-73
+243            </intent-filter>
+244        </receiver>
+245        <receiver
+245-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:89:9-99:20
+246            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+246-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:90:13-104
+247            android:directBootAware="false"
+247-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:91:13-44
+248            android:enabled="false"
+248-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:92:13-36
+249            android:exported="false" >
+249-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:93:13-37
+250            <intent-filter>
+250-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:95:13-98:29
+251                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+251-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:17-83
+251-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:25-80
+252                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+252-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:17-82
+252-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:25-79
+253            </intent-filter>
+254        </receiver>
+255        <receiver
+255-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:100:9-109:20
+256            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+256-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:101:13-103
+257            android:directBootAware="false"
+257-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:102:13-44
+258            android:enabled="false"
+258-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:103:13-36
+259            android:exported="false" >
+259-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:104:13-37
+260            <intent-filter>
+260-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:106:13-108:29
+261                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+261-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:17-79
+261-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:25-76
+262            </intent-filter>
+263        </receiver>
+264        <receiver
+264-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:110:9-121:20
+265            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+265-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:111:13-88
+266            android:directBootAware="false"
+266-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:112:13-44
+267            android:enabled="false"
+267-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:113:13-36
+268            android:exported="false" >
+268-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:114:13-37
+269            <intent-filter>
+269-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:116:13-120:29
+270                <action android:name="android.intent.action.BOOT_COMPLETED" />
+270-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:87:17-79
+270-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:87:25-76
+271                <action android:name="android.intent.action.TIME_SET" />
+271-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:17-73
+271-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:25-70
+272                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+272-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:17-81
+272-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:25-78
+273            </intent-filter>
+274        </receiver>
+275        <receiver
+275-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:122:9-131:20
+276            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+276-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:123:13-99
+277            android:directBootAware="false"
+277-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:124:13-44
+278            android:enabled="@bool/enable_system_alarm_service_default"
+278-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:125:13-72
+279            android:exported="false" >
+279-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:126:13-37
+280            <intent-filter>
+280-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:128:13-130:29
+281                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+281-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:17-98
+281-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:25-95
+282            </intent-filter>
+283        </receiver>
+284        <receiver
+284-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:132:9-142:20
+285            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+285-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:133:13-78
+286            android:directBootAware="false"
+286-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:134:13-44
+287            android:enabled="true"
+287-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:135:13-35
+288            android:exported="true"
+288-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:136:13-36
+289            android:permission="android.permission.DUMP" >
+289-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:137:13-57
+290            <intent-filter>
+290-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:139:13-141:29
+291                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+291-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:17-88
+291-->[androidx.work:work-runtime:2.7.1] /home/grigala/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:25-85
+292            </intent-filter>
+293        </receiver>
+294
+295        <service
+295-->[androidx.room:room-runtime:2.2.5] /home/grigala/.gradle/caches/transforms-3/32f4dc14231a603560d048af81f18073/transformed/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
+296            android:name="androidx.room.MultiInstanceInvalidationService"
+296-->[androidx.room:room-runtime:2.2.5] /home/grigala/.gradle/caches/transforms-3/32f4dc14231a603560d048af81f18073/transformed/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
+297            android:directBootAware="true"
+297-->[androidx.room:room-runtime:2.2.5] /home/grigala/.gradle/caches/transforms-3/32f4dc14231a603560d048af81f18073/transformed/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
+298            android:exported="false" />
+298-->[androidx.room:room-runtime:2.2.5] /home/grigala/.gradle/caches/transforms-3/32f4dc14231a603560d048af81f18073/transformed/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
+299
+300        <meta-data
+300-->[com.google.android.gms:play-services-basement:18.0.0] /home/grigala/.gradle/caches/transforms-3/215960a0194ac28e5b0b5b1a911927bf/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+301            android:name="com.google.android.gms.version"
+301-->[com.google.android.gms:play-services-basement:18.0.0] /home/grigala/.gradle/caches/transforms-3/215960a0194ac28e5b0b5b1a911927bf/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+302            android:value="@integer/google_play_services_version" />
+302-->[com.google.android.gms:play-services-basement:18.0.0] /home/grigala/.gradle/caches/transforms-3/215960a0194ac28e5b0b5b1a911927bf/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+303
+304        <receiver
+304-->[com.google.firebase:firebase-messaging:23.0.0] /home/grigala/.gradle/caches/transforms-3/f2d8ea559f0708cb894d346e2fdea6ed/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:28:9-35:20
+305            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+305-->[com.google.firebase:firebase-messaging:23.0.0] /home/grigala/.gradle/caches/transforms-3/f2d8ea559f0708cb894d346e2fdea6ed/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:29:13-78
+306            android:exported="true"
+306-->[com.google.firebase:firebase-messaging:23.0.0] /home/grigala/.gradle/caches/transforms-3/f2d8ea559f0708cb894d346e2fdea6ed/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:30:13-36
+307            android:permission="com.google.android.c2dm.permission.SEND" >
+307-->[com.google.firebase:firebase-messaging:23.0.0] /home/grigala/.gradle/caches/transforms-3/f2d8ea559f0708cb894d346e2fdea6ed/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:31:13-73
+308            <intent-filter>
+308-->[com.google.firebase:firebase-messaging:23.0.0] /home/grigala/.gradle/caches/transforms-3/f2d8ea559f0708cb894d346e2fdea6ed/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:32:13-34:29
+309                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+309-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:56:17-81
+309-->[com.onesignal:notifications:5.0.0] /home/grigala/.gradle/caches/transforms-3/49efa63a4b5855b80184dc0dc7a2b8da/transformed/jetified-notifications-5.0.0/AndroidManifest.xml:56:25-78
+310            </intent-filter>
+311        </receiver>
+312        <!--
+313             FirebaseMessagingService performs security checks at runtime,
+314             but set to not exported to explicitly avoid allowing another app to call it.
+315        -->
+316        <service
+316-->[com.google.firebase:firebase-messaging:23.0.0] /home/grigala/.gradle/caches/transforms-3/f2d8ea559f0708cb894d346e2fdea6ed/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:41:9-48:19
+317            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+317-->[com.google.firebase:firebase-messaging:23.0.0] /home/grigala/.gradle/caches/transforms-3/f2d8ea559f0708cb894d346e2fdea6ed/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:42:13-82
+318            android:directBootAware="true"
+318-->[com.google.firebase:firebase-messaging:23.0.0] /home/grigala/.gradle/caches/transforms-3/f2d8ea559f0708cb894d346e2fdea6ed/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:43:13-43
+319            android:exported="false" >
+319-->[com.google.firebase:firebase-messaging:23.0.0] /home/grigala/.gradle/caches/transforms-3/f2d8ea559f0708cb894d346e2fdea6ed/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:44:13-37
+320            <intent-filter android:priority="-500" >
+320-->[com.google.firebase:firebase-messaging:23.0.0] /home/grigala/.gradle/caches/transforms-3/f2d8ea559f0708cb894d346e2fdea6ed/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:45:13-47:29
+320-->[com.google.firebase:firebase-messaging:23.0.0] /home/grigala/.gradle/caches/transforms-3/f2d8ea559f0708cb894d346e2fdea6ed/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:45:28-51
+321                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+321-->[com.google.firebase:firebase-messaging:23.0.0] /home/grigala/.gradle/caches/transforms-3/f2d8ea559f0708cb894d346e2fdea6ed/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:46:17-78
+321-->[com.google.firebase:firebase-messaging:23.0.0] /home/grigala/.gradle/caches/transforms-3/f2d8ea559f0708cb894d346e2fdea6ed/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:46:25-75
+322            </intent-filter>
+323        </service>
+324        <service
+324-->[com.google.firebase:firebase-messaging:23.0.0] /home/grigala/.gradle/caches/transforms-3/f2d8ea559f0708cb894d346e2fdea6ed/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:49:9-55:19
+325            android:name="com.google.firebase.components.ComponentDiscoveryService"
+325-->[com.google.firebase:firebase-messaging:23.0.0] /home/grigala/.gradle/caches/transforms-3/f2d8ea559f0708cb894d346e2fdea6ed/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:50:13-84
+326            android:directBootAware="true"
+326-->[com.google.firebase:firebase-common:20.0.0] /home/grigala/.gradle/caches/transforms-3/3be4b1b79e0db4da1cea9387a6f9950a/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
+327            android:exported="false" >
+327-->[com.google.firebase:firebase-messaging:23.0.0] /home/grigala/.gradle/caches/transforms-3/f2d8ea559f0708cb894d346e2fdea6ed/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:51:13-37
+328            <meta-data
+328-->[com.google.firebase:firebase-messaging:23.0.0] /home/grigala/.gradle/caches/transforms-3/f2d8ea559f0708cb894d346e2fdea6ed/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:52:13-54:85
+329                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+329-->[com.google.firebase:firebase-messaging:23.0.0] /home/grigala/.gradle/caches/transforms-3/f2d8ea559f0708cb894d346e2fdea6ed/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:53:17-119
+330                android:value="com.google.firebase.components.ComponentRegistrar" />
+330-->[com.google.firebase:firebase-messaging:23.0.0] /home/grigala/.gradle/caches/transforms-3/f2d8ea559f0708cb894d346e2fdea6ed/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:54:17-82
+331            <meta-data
+331-->[com.google.firebase:firebase-datatransport:18.0.0] /home/grigala/.gradle/caches/transforms-3/5c83a032bff9eb20a6f7b29946e0cf6c/transformed/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:28:13-30:85
+332                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+332-->[com.google.firebase:firebase-datatransport:18.0.0] /home/grigala/.gradle/caches/transforms-3/5c83a032bff9eb20a6f7b29946e0cf6c/transformed/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:29:17-115
+333                android:value="com.google.firebase.components.ComponentRegistrar" />
+333-->[com.google.firebase:firebase-datatransport:18.0.0] /home/grigala/.gradle/caches/transforms-3/5c83a032bff9eb20a6f7b29946e0cf6c/transformed/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:30:17-82
+334            <meta-data
+334-->[com.google.firebase:firebase-installations:17.0.0] /home/grigala/.gradle/caches/transforms-3/25426370f8f663333912ec5101de2df2/transformed/jetified-firebase-installations-17.0.0/AndroidManifest.xml:18:13-20:85
+335                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+335-->[com.google.firebase:firebase-installations:17.0.0] /home/grigala/.gradle/caches/transforms-3/25426370f8f663333912ec5101de2df2/transformed/jetified-firebase-installations-17.0.0/AndroidManifest.xml:19:17-127
+336                android:value="com.google.firebase.components.ComponentRegistrar" />
+336-->[com.google.firebase:firebase-installations:17.0.0] /home/grigala/.gradle/caches/transforms-3/25426370f8f663333912ec5101de2df2/transformed/jetified-firebase-installations-17.0.0/AndroidManifest.xml:20:17-82
+337        </service>
+338        <service
+338-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/grigala/.gradle/caches/transforms-3/3e878e9abf9a947843302370afeea83d/transformed/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:29:9-35:19
+339            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+339-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/grigala/.gradle/caches/transforms-3/3e878e9abf9a947843302370afeea83d/transformed/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:30:13-103
+340            android:exported="false" >
+340-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/grigala/.gradle/caches/transforms-3/3e878e9abf9a947843302370afeea83d/transformed/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:31:13-37
+341            <meta-data
+341-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/grigala/.gradle/caches/transforms-3/3e878e9abf9a947843302370afeea83d/transformed/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:32:13-34:39
+342                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+342-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/grigala/.gradle/caches/transforms-3/3e878e9abf9a947843302370afeea83d/transformed/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:33:17-94
+343                android:value="cct" />
+343-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/grigala/.gradle/caches/transforms-3/3e878e9abf9a947843302370afeea83d/transformed/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:34:17-36
+344        </service>
+345        <service
+345-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/grigala/.gradle/caches/transforms-3/7db14073ee3ce3bf274e8de4cdacac19/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:26:9-30:19
+346            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+346-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/grigala/.gradle/caches/transforms-3/7db14073ee3ce3bf274e8de4cdacac19/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:27:13-117
+347            android:exported="false"
+347-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/grigala/.gradle/caches/transforms-3/7db14073ee3ce3bf274e8de4cdacac19/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:28:13-37
+348            android:permission="android.permission.BIND_JOB_SERVICE" >
+348-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/grigala/.gradle/caches/transforms-3/7db14073ee3ce3bf274e8de4cdacac19/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:29:13-69
+349        </service>
+350
+351        <receiver
+351-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/grigala/.gradle/caches/transforms-3/7db14073ee3ce3bf274e8de4cdacac19/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:32:9-34:40
+352            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+352-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/grigala/.gradle/caches/transforms-3/7db14073ee3ce3bf274e8de4cdacac19/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:33:13-132
+353            android:exported="false" />
+353-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/grigala/.gradle/caches/transforms-3/7db14073ee3ce3bf274e8de4cdacac19/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:34:13-37
+354
+355        <provider
+355-->[com.google.firebase:firebase-common:20.0.0] /home/grigala/.gradle/caches/transforms-3/3be4b1b79e0db4da1cea9387a6f9950a/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
+356            android:name="com.google.firebase.provider.FirebaseInitProvider"
+356-->[com.google.firebase:firebase-common:20.0.0] /home/grigala/.gradle/caches/transforms-3/3be4b1b79e0db4da1cea9387a6f9950a/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
+357            android:authorities="com.earthquakes.firebaseinitprovider"
+357-->[com.google.firebase:firebase-common:20.0.0] /home/grigala/.gradle/caches/transforms-3/3be4b1b79e0db4da1cea9387a6f9950a/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
+358            android:directBootAware="true"
+358-->[com.google.firebase:firebase-common:20.0.0] /home/grigala/.gradle/caches/transforms-3/3be4b1b79e0db4da1cea9387a6f9950a/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
+359            android:exported="false"
+359-->[com.google.firebase:firebase-common:20.0.0] /home/grigala/.gradle/caches/transforms-3/3be4b1b79e0db4da1cea9387a6f9950a/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
+360            android:initOrder="100" />
+360-->[com.google.firebase:firebase-common:20.0.0] /home/grigala/.gradle/caches/transforms-3/3be4b1b79e0db4da1cea9387a6f9950a/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+361    </application>
+362
+363</manifest>

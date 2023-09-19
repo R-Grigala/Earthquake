@@ -17,6 +17,10 @@ import com.reactnativecommunity.netinfo.NetInfoPackage;
 import com.swmansion.gesturehandler.RNGestureHandlerPackage;
 // react-native-maps
 import com.rnmaps.maps.MapsPackage;
+// react-native-onesignal
+import com.onesignal.rnonesignalandroid.ReactNativeOneSignalPackage;
+// react-native-safe-area-context
+import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
 // react-native-screens
 import com.swmansion.rnscreens.RNScreensPackage;
 
@@ -67,6 +71,8 @@ public class PackageList {
       new NetInfoPackage(),
       new RNGestureHandlerPackage(),
       new MapsPackage(),
+      new ReactNativeOneSignalPackage(),
+      new SafeAreaContextPackage(),
       new RNScreensPackage()
     ));
   }
