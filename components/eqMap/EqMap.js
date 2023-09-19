@@ -1,16 +1,14 @@
 import { StyleSheet, Text, TouchableOpacity, View, Image, Dimensions } from 'react-native';
-import React, { useContext } from 'react';
+import React from 'react';
 import MapView, { Callout, Marker } from 'react-native-maps';
 import { useNavigation } from '@react-navigation/native';
 import { formatData } from '../../utils/formatData';
 import { eqColor } from '../../utils/utils';
 import { useTranslation } from 'react-i18next';
-import themeContext from '../../theme/themeContext';
 
 const EqMap = ({data}) => {
 
   const {t} = useTranslation();
-  const theme = useContext(themeContext);
   const navigation = useNavigation();
 
   const handleMarkerPress = (event) => {
@@ -85,6 +83,8 @@ const { width } = Dimensions.get('window');
 const styles = StyleSheet.create({
   mapview: {
     flex: 1,
+    width: Dimensions.get('window').width,
+    height: Dimensions.get('window').height
   },
   markerIcon: {
     width: width * 0.07, // Adjust the width based on the screen width (7% of the screen width)
