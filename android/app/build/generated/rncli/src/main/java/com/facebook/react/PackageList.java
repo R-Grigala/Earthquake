@@ -11,10 +11,7 @@ import com.facebook.react.shell.MainReactPackage;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-// @react-native-community/netinfo
-import com.reactnativecommunity.netinfo.NetInfoPackage;
-// react-native-maps
-import com.rnmaps.maps.MapsPackage;
+
 
 public class PackageList {
   private Application application;
@@ -59,9 +56,7 @@ public class PackageList {
 
   public ArrayList<ReactPackage> getPackages() {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
-      new MainReactPackage(mConfig),
-      new NetInfoPackage(),
-      new MapsPackage()
+      new MainReactPackage(mConfig)
     ));
   }
 }

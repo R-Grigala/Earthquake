@@ -73,9 +73,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.earhquakes"
+    namespace "com.earthquakes"
     defaultConfig {
-        applicationId "com.earhquakes"
+        applicationId "com.earthquakes"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
