@@ -1,3 +1,4 @@
+import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer, DarkTheme, DefaultTheme } from "@react-navigation/native";
 import MyTabs from './navigation/tabs/MyTabs';
