@@ -181,11 +181,11 @@
 92        </activity>
 93
 94        <meta-data
-94-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:24:7-26:56
+94-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:24:7-26:66
 95            android:name="com.google.android.geo.API_KEY"
 95-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:25:9-54
-96            android:value="Your Google maps API Key Here" /> <!-- Needs to be explicitly declared on P+ -->
-96-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:26:9-54
+96            android:value="AIzaSyB9ZJaJIsL12-OkvgpfI4YmNzbKC5ZG4F8" /> <!-- Needs to be explicitly declared on P+ -->
+96-->/home/grigala/Code/Earthquakes/android/app/src/main/AndroidManifest.xml:26:9-64
 97        <uses-library
 97-->[com.google.android.gms:play-services-maps:18.0.2] /home/grigala/.gradle/caches/transforms-3/4fe486e3c16899c67b1f49a3e3ae28f6/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:39:9-41:40
 98            android:name="org.apache.http.legacy"

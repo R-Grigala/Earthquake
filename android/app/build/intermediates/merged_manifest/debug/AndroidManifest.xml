@@ -93,7 +93,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="Your Google maps API Key Here" /> <!-- Needs to be explicitly declared on P+ -->
+            android:value="AIzaSyB9ZJaJIsL12-OkvgpfI4YmNzbKC5ZG4F8" /> <!-- Needs to be explicitly declared on P+ -->
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />
