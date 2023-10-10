@@ -1,0 +1,48 @@
+{
+    "project_info": {
+      "project_number": "8657525981",
+      "project_id": "fcmgnsmc",
+      "storage_bucket": "fcmgnsmc.appspot.com"
+    },
+    "client": [
+      {
+        "client_info": {
+          "mobilesdk_app_id": "1:8657525981:android:a5d9c38e8123a6fe6a4f34",
+          "android_client_info": {
+            "package_name": "com.earthquakes"
+          }
+        },
+        "oauth_client": [],
+        "api_key": [
+          {
+            "current_key": "AIzaSyAn8DTi5h5YimXA_QiJOtqR42h5qTchxaI"
+          }
+        ],
+        "services": {
+          "appinvite_service": {
+            "other_platform_oauth_client": []
+          }
+        }
+      },
+      {
+        "client_info": {
+          "mobilesdk_app_id": "1:8657525981:android:ab76962b660cf7576a4f34",
+          "android_client_info": {
+            "package_name": "com.fcm_noti"
+          }
+        },
+        "oauth_client": [],
+        "api_key": [
+          {
+            "current_key": "AIzaSyAn8DTi5h5YimXA_QiJOtqR42h5qTchxaI"
+          }
+        ],
+        "services": {
+          "appinvite_service": {
+            "other_platform_oauth_client": []
+          }
+        }
+      }
+    ],
+    "configuration_version": "1"
+  }
